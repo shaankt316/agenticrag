@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Your Certificate - SPACS CEC</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Logo -->
+    <img src="spacs-logo.png" alt="SPACS CEC Logo" class="site-logo">
+
+
+    <main class="container">
+        <div class="content-wrapper">
+            <p class="eyebrow">WORKSHOP ON AGENTIC RAG</p>
+            <h1 id="animatedTitle">
+                <span class="title-line">Get Your</span>
+                <span class="title-line">Certificate</span>
+            </h1>
+            <p class="subtitle">
+                Thank you for participating in the workshop organized by SPACS CEC on 9th September 2025.
+            </p>
+
+            <!-- Decorative line -->
+            <div class="separator-line"></div>
+
+            <form id="certificateForm" class="certificate-form">
+                <input type="text" id="fullName" placeholder="Enter your full name" required autocomplete="off" />
+                <button type="submit" class="cta-button" id="submitBtn">
+                    <span class="btn-text">Find Certificate</span>
+                    <span class="loader" style="display:none"></span>
+                    <span class="arrow-icon">→</span>
+                </button>
+            </form>
+
+            <div id="resultContainer" class="result-container" style="display:none"></div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        © 2025 SPACS CEC. All rights reserved.
+    </footer>
+
+    <!-- Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
